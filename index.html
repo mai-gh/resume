@@ -2,13 +2,14 @@
 <html>
   <head>
     <meta charset="utf-8"/>
-    <title>Jeremiah (Mai) Atwell</title>
+    <title>Jeremiah Atwell</title>
     <style type="text/css">
-      body { font-family: sans-serif; }
-      main { margin: auto; padding: 0 auto; }
-      header { text-align: center; }
+      body { font-family: sans-serif; margin-top: 0px;}
+      main { margin: auto; padding: 0 auto; margin-top: 0px; padding-top: 0px;}
+      header { text-align: center;}
       address { font-style: normal; }
       h1, h2 { margin-bottom: 0.2em; }
+      .name { margin-top: .25em !important; }
       ul { margin-top: 0.2em; }
       a, a:visited { color: darkblue; }
       .date { float: right; }
@@ -20,10 +21,11 @@
   <body>
     <main id="cv">
       <header>
-        <h1>Jeremiah (Mai) Atwell</h1>
-        Software Engineer &bull; New York, NY
+        <h1 class="name">Jeremiah Atwell</h1>
+        Full Stack Software Engineer &bull; Brooklyn, NY
         <address>
           <a href="mailto:jea989@gmail.com">jea989@gmail.com</a> &bull;
+          <a href="tel:+1-917-727-7693">917-727-7693</a><br/>
           <a href="https://github.com/mai-gh">github.com/mai-gh</a>
         </address>
       </header>
@@ -31,8 +33,8 @@
       <section id="skills">
         <h2>Technical Skills</h2>
         <ul>
-          <li>JavaScript, TypeScript, Python, C</li>
-          <li>Node.js, Express, React, Redux, SQL, HTML, CSS</li>
+          <li>JavaScript, TypeScript, Python, C, Java, Rust</li>
+          <li>NodeJS, Express, React, Redux, SQL, HTML, CSS</li>
           <li>Linux/Unix, Bash, Vim, Git, Make, Selenium</li>
           <li>CAD, EDA/PCB Design, Testing, Automation, GIS</li>
         </ul>
@@ -41,26 +43,29 @@
       <section id="projects">
         <h2>Projects</h2>
         <section class="sub">
-          <strong>Street Parker</strong>
+          <strong>ASPMap.nyc</strong>
           &bull; Full Stack Developer &bull;
-          <a href="https://github.com/mai-gh/streetparker2">https://github.com/mai-gh/streetparker2</a>
+          <a href="http://aspmap.asp">aspmap.nyc</a>
           <span class="date">2023</span><br/>
           View NYC Alternate Side Parking overlaid on a city street map.
           <ul>
             <li>Converts ArcGIS Shapefiles from NYC Open Data to GeoJSON for display using <a href="https://openlayers.org/">OpenLayers</a></li>
             <li>Parses city work orders to display exact boundaries of alternate side parking zones</li>
             <li>Highlights streets with a single alternate side parking day, to minimize extra driving</li>
+            <li>Android app <a href="https://play.google.com/store/apps/details?id=nyc.aspmap">(available on the google play store)</a> caches all map data, enabling offline use</li>
           </ul>
         </section>
+
         <section class="sub">
-          <strong>Internation House of Pie</strong>
+          <strong>Canvect</strong>
           &bull; Full Stack Developer &bull;
-          <a href="https://ihopie.cf">ihopie.cf</a>
+          <a href="https://canvect.com">canvect.com</a>
           <span class="date">2022</span><br/>
-          Online shopping app featuring delicious pies from around the world!
+          In browser 2D canvas vector drawing tool
           <ul>
-            <li>Created a tool to seed database with randomly generated test fixtures</li>
-            <li>Implemented a persistent shopping cart using browser local storage</li>
+            <li>Use-cases include: Architectural, Artistic, Electronics, etc.</li>
+            <li>Import / Export to SVG</li>
+            <li>Completely vanilla javascript with no external libraries</li>
           </ul>
         </section>
       </section>
@@ -68,8 +73,19 @@
       <section id="work">
         <h2>Employment</h2>
         <section class="sub">
+          <strong>Lead Full Stack Software Engineer</strong>, Pacer Automated Solutions, San Francisco, CA (Remote)
+          <span class="date">2023</span>
+          <ul>
+            <li>Successfully transformed an unfinished prototype into a fully operational product</li>
+            <li>Trained and assisted junior developers in debugging environment &amp; coding issues</li>
+            <li>Developed unit testing for frontend &amp; backend</li>
+            <li>Automated accessing federal court records using undocumented <a href="https://en.wikipedia.org/wiki/CM%2FECF">CM/ECF</a> public apis</li>
+          </ul>
+        </section>
+
+        <section class="sub">
           <strong>Electronics / Software Engineer</strong>, freelance, New York, NY
-          <span class="date">2017&mdash;2022</span>
+          <span class="date">2017&mdash;2023</span>
           <ul>
             <li>Designed and assembled electronic systems for conceptual art projects</li>
             <li>Developed embedded controller software for individual pieces and installations</li>
@@ -79,7 +95,7 @@
 
         <section class="sub">
           <strong>Cabinet Maker / Scenic Carpenter</strong>, freelance, New York, NY
-          <span class="date">2016&mdash;2022</span>
+          <span class="date">2016&mdash;2023</span>
           <ul>
             <li>Crafted and installed bespoke European-style cabinets</li>
             <li>Constructed sets for theater, films, music videos, and other productions</li>
@@ -89,7 +105,7 @@
         </section>
 
         <section class="sub">
-          <strong>IT Associate</strong>, Carnegie Library of Pittsburgh, Pittsburgh, PA
+          <strong>Library Clerk / IT Associate</strong>, Carnegie Library of Homestead, Pittsburgh, PA
           <span class="date">2015&mdash;2016</span>
           <ul>
             <li>Assisted library patrons in the use of all information systems</li>
@@ -102,7 +118,7 @@
       <section id="school">
         <h2>Education</h2>
         <section class="sub">
-          <strong>Grace Hopper Program at Full Stack Academy</strong>
+          <strong>Full Stack Academy</strong>
           <span class="date">2022</span><br/>
           Certificate in Software Engineering
           <ul>
